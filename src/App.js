@@ -12,7 +12,7 @@ class App extends React.Component {
           this.setState({lat: position.coords.latitude})
         },
         (err) => {
-          this.setState({lat: null, errorMessage: err.message})
+          this.setState({errorMessage: err.message})
           //console.log(err)
         }
     )
@@ -20,9 +20,8 @@ class App extends React.Component {
 
   render() {
     return <div>
-      {this.state.lat}
-      {console.log(this.state)}
-    </div>
+      {this.state.lat || this.state.errorMessage}
+      </div>
   }
 }
 
