@@ -1,8 +1,8 @@
 import React from "react";
 
-let SeasonDisplay = () => {
+let SeasonDisplay = (props) => {
   return <div>
-    Season display
+  {props.status}
   </div>
 }
 
