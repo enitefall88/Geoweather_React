@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import SeasonDisplay from "./SeasonDisplay";
 
 class App extends React.Component {
