@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return <div>
       <SeasonDisplay
-          status={this.state.lat || this.state.errorMessage}
+          lat={this.state.lat || this.state.errorMessage}
       />
     </div>
   }
